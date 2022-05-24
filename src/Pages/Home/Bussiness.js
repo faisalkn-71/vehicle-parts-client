@@ -6,12 +6,12 @@ const Bussiness = () => {
     return (
         <div className='my-20'>
             <div className='text-center'>
-            <h1 className='text-4xl text-secondary font-bold uppercase'>Millions Bussiness Trust Us</h1>
+            <h1 className='text-4xl text-secondary font-bold'>Millions Bussiness Trust Us</h1>
             <h1>Try to Understand Users Expectation</h1>
             </div>
 
 
-            <div class="stats stats-vertical w-full lg:stats-horizontal shadow text-center text-primary ">
+            <div class="stats stats-vertical w-full lg:stats-horizontal shadow mt-5 text-center text-primary ">
 
                 <div class="stat">
                     <div className='text-3xl'>
