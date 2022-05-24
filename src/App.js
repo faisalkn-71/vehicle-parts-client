@@ -5,6 +5,8 @@ import Home from './Pages/Home/Home';
 import Login from './Pages/Login/Login';
 import Blogs from './Pages/Blogs/Blogs';
 import NotFound from './Pages/Shared/NotFound';
+import SignUp from './Pages/Login/SignUp';
+import Products from './Pages/Home/Products';
 
 function App() {
   return (
@@ -12,8 +14,10 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        <Route path='products' element={<Products></Products>}></Route>
         <Route path='blogs' element={<Blogs></Blogs>}></Route>
         <Route path='login' element={<Login></Login>}></Route>
+        <Route path='signUp' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       
