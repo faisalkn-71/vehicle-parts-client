@@ -1,0 +1,22 @@
+[
+    {
+      "_id": "627743e29e38a32e57d928c1",
+      "picture": "https://i.ibb.co/7Kb8y5X/download.jpg",
+      "supplier_name": "Bluewaves Supply"
+    },
+    {
+      "_id": "627743e24ce1546bf730ec2a",
+      "picture": "https://i.ibb.co/KKv8hdz/download-1.jpg",
+      "supplier_name": "The General Wholesale"
+    },
+    {
+      "_id": "627743e2e05e9d98ee004564",
+      "picture": "https://i.ibb.co/0hFF2d5/download-2.jpg",
+      "supplier_name": "Fresh Point Supply"
+    },
+    {
+      "_id": "627743e237cdae326fcbe069",
+      "picture": "https://i.ibb.co/5RYqXRj/download-3.jpg",
+      "supplier_name": "Classic Distributing"
+    }
+  ]
