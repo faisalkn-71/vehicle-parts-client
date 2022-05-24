@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading'
 
@@ -8,7 +8,6 @@ import Loading from '../Shared/Loading'
 
 const SocialLogin = () => {
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
-    const location = useLocation();
     const navigate = useNavigate();
 
     if(user){
@@ -33,7 +32,6 @@ const SocialLogin = () => {
     return (
         <div>
 
-
             {ErrorMessage}
             
             <div className='flex justify-center items-center card-body w-full max-w-md'>
@@ -47,5 +45,6 @@ const SocialLogin = () => {
         </div>
     );
 };
+
 
 export default SocialLogin;

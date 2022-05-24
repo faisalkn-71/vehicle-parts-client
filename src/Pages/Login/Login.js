@@ -115,7 +115,7 @@ const Login = () => {
 
                             <input className='btn w-full max-w-md text-white font-bold' type="submit" value='Login' />
                         </form>
-                        <p>New to Doctors Portal? <Link className='text-primary' to='/signup'>Create new account</Link></p>
+                        <p>New to Vehicle Parts? <Link className='text-primary' to='/signup'>Create new account</Link></p>
 
 
                     </div>
