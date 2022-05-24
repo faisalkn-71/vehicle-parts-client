@@ -1,22 +1,30 @@
 [
-    {
-      "_id": "627743e29e38a32e57d928c1",
-      "picture": "https://i.ibb.co/7Kb8y5X/download.jpg",
-      "supplier_name": "Bluewaves Supply"
-    },
+    
     {
       "_id": "627743e24ce1546bf730ec2a",
-      "picture": "https://i.ibb.co/KKv8hdz/download-1.jpg",
-      "supplier_name": "The General Wholesale"
+      "picture": "https://i.ibb.co/H2fkX5B/steering-wheel.jpg",
+      "name": "Steering Wheel",
+      "description": "This wheel features Grant's exclusive dual-plane spoke design. This 3-dimensional hi-tech, dual-plane 4-spoke design offers a world class look. A Grant Installation Kit is necessary to mount this wheel to a vehicle. This wheel will work with any Grant Standard 3000 or 4000 Series Installation Kits. It WILL NOT work with Grant Billet or Euro Installation Kits. Note: The eight bolt pattern you see around the horn button is decorative only and this wheel is still a three bolt pattern beneath the horn button.",
+      "available_quantity": "700", 
+      "minimum_order_quantity": "100",
+      "price": "100"
+    },
+    {
+      "_id": "627743e29e38a32e57d928c1",
+      "picture": "https://i.ibb.co/C9HJQS2/tire.jpg",
+      "name": "Car Tire",
+      "description": "Genuine Passion. Exceptional Drives. Derived from the legendary MICHELIN PILOT Super Sport, there is a new #1 in max performance summer tires. [1] Based on internal dry circuit lap time tests comparing the MICHELIN PILOT Sport 4 S (39. 25 sec. avg. lap time) versus the Bridgestone Potenza S-04 Pole Position (40. 70 sec. avg. lap time), Continental ExtremeContact Sport (40. 03 sec. avg. lap time), Pirelli P ZERO PZ4 (40. 24 sec. avg. lap time), and Goodyear Eagle F1 Asymmetric 3 (40. 44 sec. avg. lap time) in tire size 235/35ZR19 91Y using a 2015 BMW 328i.",
+      "available_quantity": "400",
+      "minimum_order_quantity": "50",
+      "price": "333"
     },
     {
       "_id": "627743e2e05e9d98ee004564",
-      "picture": "https://i.ibb.co/0hFF2d5/download-2.jpg",
-      "supplier_name": "Fresh Point Supply"
-    },
-    {
-      "_id": "627743e237cdae326fcbe069",
-      "picture": "https://i.ibb.co/5RYqXRj/download-3.jpg",
-      "supplier_name": "Classic Distributing"
+      "picture": "https://i.ibb.co/M2dwyjw/battery.jpg",
+      "name": "Best Battery",
+      "description": "XS Power has a battery for every form of racing with a wide selection ranging from 12 pound 12 Volt batteries to 14 Volt batteries for the street to 30 pound 16 Volt batteries. Tested in everything from 300-plus MPH salt flat cars to dirt track to circle track to drag racing to boat racing, XS Power has the only batteries you need for racing. Using the highest energy density chemistry known in AGM batteries, XS Power is now the battery of choice for competition car audio.",
+      "available_quantity": "1000",
+      "minimum_order_quantity": "150",
+      "price": "400"
     }
   ]
