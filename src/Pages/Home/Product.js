@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import FocusButton from '../Shared/FocusButton';
 
 
@@ -18,7 +19,9 @@ const Product = ({product}) => {
     <p>Price Per Product: ${price}</p>
     <br />
     <div className="card-actions">
-      <FocusButton>Purchase</FocusButton>
+      <FocusButton>
+        <Link to='/purchase'>Purchase</Link>
+      </FocusButton>
     </div>
   </div>
 </div>

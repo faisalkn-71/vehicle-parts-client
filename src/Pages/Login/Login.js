@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useForm } from "react-hook-form";
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
@@ -17,13 +17,15 @@ const Login = () => {
 
       const location = useLocation();
       const navigate = useNavigate();
+      let from = location.state?.from?.pathname || "/";
 
     const { register, formState: { errors }, handleSubmit } = useForm();
 
-    if(user){
-        console.log(user)
-        navigate('/')
-    }
+    useEffect(() => {
+        if(user){
+            navigate(from, { replace: true });
+        }
+    }, [user, from, navigate])
 
 
     if(loading){

@@ -17,17 +17,20 @@ const SignUp = () => {
 
       const [updateProfile, updating, updateError] = useUpdateProfile(auth);
 
+      const location = useLocation();
       const navigate = useNavigate();
+      let from = location.state?.from?.pathname || "/";
 
 
 
     const { register, formState: { errors }, handleSubmit } = useForm();
 
 
-    if(user){
-        console.log(user)
-        navigate('/')
-    }
+    useEffect(() => {
+        if(user){
+            navigate(from, { replace: true });
+        }
+    }, [user, from, navigate])
     
 
 
