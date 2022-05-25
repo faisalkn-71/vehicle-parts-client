@@ -5,6 +5,7 @@ const Purchase = () => {
         <div>
             <h1>this is purchase button</h1>
         </div>
+
     );
 };
 

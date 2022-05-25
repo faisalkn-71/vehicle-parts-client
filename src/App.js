@@ -10,6 +10,9 @@ import Products from './Pages/Home/Products';
 import Purchase from './Pages/Home/Purchase';
 import RequireAuth from './Pages/Login/RequireAuth';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
@@ -30,7 +33,7 @@ function App() {
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       
-
+      <ToastContainer />
     </div>
   );
 }

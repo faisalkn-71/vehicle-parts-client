@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
 import { useForm } from "react-hook-form";
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSignInWithEmailAndPassword, useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
 import SocialLogin from './SocialLogin';
+import { toast } from 'react-toastify';
 
 
 const Login = () => {
@@ -15,11 +16,13 @@ const Login = () => {
         error,
       ] = useSignInWithEmailAndPassword(auth);
 
+      const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+
       const location = useLocation();
       const navigate = useNavigate();
       let from = location.state?.from?.pathname || "/";
 
-    const { register, formState: { errors }, handleSubmit } = useForm();
+    const { register, getValues, formState: { errors }, handleSubmit } = useForm();
 
     useEffect(() => {
         if(user){
@@ -45,6 +48,19 @@ const Login = () => {
     
         signInWithEmailAndPassword(data.email, data.password)
     };
+
+
+    const resetPassword = () => {
+        const email = getValues("email");
+        if (email) {
+            sendPasswordResetEmail(email);
+            toast('Sent email');
+        }
+        else {
+            toast("Please Enter your E-mail Address")
+        }
+
+    }
 
     return (
         <div>
@@ -117,6 +133,11 @@ const Login = () => {
 
                             <input className='btn w-full max-w-md text-white font-bold' type="submit" value='Login' />
                         </form>
+
+
+                        <p className='mt-3 text-start'><span onClick={resetPassword} style={{ cursor: 'pointer' }} className='text-primary'>Forget Password?</span></p>
+
+
                         <p>New to Vehicle Parts? <Link className='text-primary' to='/signup'>Create new account</Link></p>
 
 
