@@ -3,7 +3,7 @@ import FocusButton from '../Shared/FocusButton';
 
 const MyPortfolio = () => {
     return (
-        <div className='mt-20'>
+        <div className='my-20'>
             <h1><span className='font-bold'>Name:</span> Md Faisal Karim</h1>
             <h1><span className='font-bold'>Email:</span> csust2021@gmail.com</h1>
             <h1><span className='font-bold'>Education:</span> CST, 2nd Semister at Changsha University of Science and Technology, China </h1>
