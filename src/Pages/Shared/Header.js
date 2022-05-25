@@ -14,6 +14,7 @@ const Header = () => {
     const menuItems = <>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/products">Products</Link></li>
+        <li><Link to="/myPortfolio">My Portfolio</Link></li>
         <li><Link to="/blogs">Blogs</Link></li>
         <li>{
 
@@ -28,7 +29,7 @@ const Header = () => {
         }</li>
     </>
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 sticky top-0">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex="0" className="btn btn-ghost lg:hidden">
