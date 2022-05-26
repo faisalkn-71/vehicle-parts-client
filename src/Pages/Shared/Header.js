@@ -21,6 +21,7 @@ const Header = () => {
         user ? 
         <>
         <h1>{user?.displayName}</h1> 
+        <Link to="/myProduct">My Product</Link>
         <button className="btn btn-ghost" onClick={logout}>Sign Out</button> 
         </>
         : 

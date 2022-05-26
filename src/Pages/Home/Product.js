@@ -1,10 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import FocusButton from '../Shared/FocusButton';
 
 
 const Product = ({product}) => {
-    const {name, description, price, minimum_order_quantity, available_quantity, picture} = product;
+    const {_id, name, description, price, minimum_order_quantity, available_quantity, picture} = product;
+
+    const navigate = useNavigate()
+
+    const navigateToPurchase = id => {
+      navigate(`purchase/${id}`);
+    }
     return (
         <div>
             <div className="card lg:max-w-lg bg-base-100 shadow-xl">
@@ -19,9 +25,8 @@ const Product = ({product}) => {
     <p>Price Per Product: ${price}</p>
     <br />
     <div className="card-actions">
-      <FocusButton>
-        <Link to='/purchase'>Purchase</Link>
-      </FocusButton>
+      
+      <button className='btn-secondary px-3 py-2 rounded text-white font-bold' onClick={() => navigateToPurchase(_id)}>Purchase</button>
     </div>
   </div>
 </div>

@@ -9,7 +9,7 @@ module.exports = {
         motortheme: {
           primary: "#0ea5e9",
           secondary: "#2563eb",
-          accent: "#37cdbe",
+          accent: "#ef4444",
           neutral: "#3d4451",
           "base-100": "#ffffff",
         },
