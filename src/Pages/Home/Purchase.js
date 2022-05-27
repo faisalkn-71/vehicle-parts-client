@@ -30,6 +30,7 @@ const Purchase = () => {
             const {data} = response;
             if(data.insertedId){
                 toast("Your Order is Proceed!!!")
+                event.target.reset();
             }
         })
 
@@ -61,13 +62,13 @@ const Purchase = () => {
 
             <form onSubmit={handleOrderNow}>
 
-                <input className='input input-bordered input-secondary w-100 mb-2' type="text" name='name' placeholder='Name' value={user?.displayName} required readOnly disabled />
+                <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text" name='name' placeholder='Name' value={user?.displayName} required readOnly disabled />
                 <br/>
                 
                 <input className='input input-bordered input-secondary w-100 mb-2' type="text" name='email' placeholder='Email' value={user?.email} required readOnly disabled />
                 <br/>
                 
-                <input className='input input-bordered input-secondary w-100 mb-2' type="text" name='product name' placeholder='Product Name' value={product.name} required readOnly />
+                <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text" name='product name' placeholder='Product Name' value={product.name} required readOnly />
                 <br/>
                 
                 <input className='input input-bordered input-secondary w-100 mb-2' type="text"  name='address' placeholder='address' autoComplete='off' required />
