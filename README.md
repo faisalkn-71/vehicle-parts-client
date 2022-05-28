@@ -2,6 +2,20 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## About Project
+
+This is a vehicle tools manufacturer website. In this website you will find tools for your vehicle. It is a awesome website for its functionality. In the home page of this website, there is more than 5 sections. There is some protected route where you can access without login or signUp. In this website I use firebase auth system. Overall it is a nice website. Please check this out now!!!
+
+### About Project Feature
+
+* React
+* React hook form
+* tailwind css
+* daisyUi
+* Firebase auth system
+* React firebase hooks
+* React router dom
+
 ## Available Scripts
 
 In the project directory, you can run:

@@ -58,26 +58,28 @@ const Purchase = () => {
             <br></br>
 
 
-            <div className='my-3 flex flex-col justify-center items-center'>
+            <div className='my-3'>
 
             <form onSubmit={handleOrderNow}>
+
+            <h2 className='text-2xl font-bold mb-4'>Add to My Product</h2>
 
                 <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text" name='name' placeholder='Name' value={user?.displayName} required readOnly disabled />
                 <br/>
                 
-                <input className='input input-bordered input-secondary w-100 mb-2' type="text" name='email' placeholder='Email' value={user?.email} required readOnly disabled />
+                <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text" name='email' placeholder='Email' value={user?.email} required readOnly disabled />
                 <br/>
                 
                 <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text" name='product name' placeholder='Product Name' value={product.name} required readOnly />
                 <br/>
                 
-                <input className='input input-bordered input-secondary w-100 mb-2' type="text"  name='address' placeholder='address' autoComplete='off' required />
+                <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text"  name='address' placeholder='address' autoComplete='off' required />
                 <br/>
                
-                <input className='input input-bordered input-secondary w-100 mb-2' type="text"  name='quantity' placeholder='Quantity' required  />
+                <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text"  name='quantity' placeholder='Quantity' required  />
                 <br/>
 
-                <input className='input input-bordered input-secondary w-100 mb-2' type="text"  name='phone' placeholder='phone' required  />
+                <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text"  name='phone' placeholder='phone' required  />
                 <br/>
                 
                 <input className='btn btn-primary w-100 text-white font-bold' type="submit" value="Order Now" />

@@ -29,7 +29,7 @@ const MyProfile = () => {
 
     return (
         <div>
-            <div className='my-3 flex flex-col justify-center items-center'>
+            <div className='m-3 '>
 
                 <form onSubmit={handleOrderNow}>
 
@@ -49,10 +49,10 @@ const MyProfile = () => {
                     <br />
 
 
-                    <input className='input input-bordered input-secondary w-100 mb-2' type="text" name='phone' placeholder='phone' required />
+                    <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text" name='phone' placeholder='phone' required />
                     <br />
 
-                    <input className='btn btn-primary w-100 text-white font-bold' type="submit" value="Order Now" />
+                    
                 </form>
             </div>
         </div>

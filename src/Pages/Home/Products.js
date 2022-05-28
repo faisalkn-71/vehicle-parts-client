@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import useProduct from '../../hook/useProduct';
+import ManageProduct from '../Dashboard/ManageProduct';
 import Product from './Product';
 
 const Products = () => {
-    const [products, setProducts] = useState([]);
-    console.log(products)
-    useEffect(() => {
-        fetch('http://localhost:5000/products')
-        .then(res => res.json())
-        .then(data => setProducts(data))
-    }, [])
+    const [products, setProducts] = useProduct([]);
+    
     return (
         <div>
             <h1 className='text-center text-4xl font-bold text-secondary'>Available Products</h1>
@@ -20,6 +17,7 @@ const Products = () => {
                    ></Product>) 
                 }
             </div>
+           
         </div>
     );
 };
