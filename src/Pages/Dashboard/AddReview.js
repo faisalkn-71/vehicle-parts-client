@@ -10,7 +10,7 @@ const AddReview = () => {
         const review = {
             feedback: event.target.feedback.value,
             name: event.target.name.value,
-            rating: event.target.rating.value,
+            ratings: event.target.ratings.value,
         }
 
         console.log(review)
@@ -37,7 +37,7 @@ const AddReview = () => {
                     <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text" name='name' placeholder='Name' required />
                     <br />
 
-                    <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="number" name='rating' placeholder='Rating' required />
+                    <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="number" name='ratings' placeholder='Rating' required />
                     <br />
 
                     <input className='btn btn-primary w-100 text-white font-bold' type="submit" value="Add Review" />

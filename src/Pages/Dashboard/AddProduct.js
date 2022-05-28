@@ -20,6 +20,7 @@ const AddProduct = () => {
                 console.log(result)
                 if(result.acknowledged){
                     toast.success("Product added successfully!!!")
+                    window.location.reload();
                 }
             })
     };

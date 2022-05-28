@@ -18,6 +18,7 @@ const Pd = ({ product }) => {
                 console.log(data)
                 if(data.acknowledged){
                     toast('Successfully deleted the Product!!!')
+                    window.location.reload();
                 }
                 const remaining = products.filter(product => product._id !== id);
                 setProducts(remaining);

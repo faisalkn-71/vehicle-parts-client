@@ -10,12 +10,22 @@ const Users = () => {
 
     useEffect( () => {
 
-        fetch('http://localhost:5000/user')
+        fetch('http://localhost:5000/user', {
+            method: 'GET', 
+            headers: {
+                authorization: `Bearer ${localStorage.getItem('accessToken')}`
+            },
+        })
         .then (res => res.json())
         .then(data => setUsers(data))
     }, [])
     
-    // const { data, isLoading, refetch } = useQuery('user', () => fetch('http://localhost:5000/user').then(res => res.json()));
+    // const { data, isLoading, refetch } = useQuery('user', () => fetch('http://localhost:5000/user', {
+    //             method: 'GET', 
+    //             headers: {
+    //                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
+    //             },
+    //         }).then(res => res.json()));
     // setUsers(data);
 
     // if (isLoading) {
@@ -33,15 +43,16 @@ const Users = () => {
                         <tr>
                             <th></th>
                             <th>Email</th>
-                            <th>Job</th>
-                            <th>Favorite Color</th>
+                            <th>Make Admin</th>
+                            <th>Remove User</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            users.map(user => <User
+                            users.map((user, index) => <User
                                 key={user._id}
                                 user={user}
+                                index = {index}
                             ></User>)
                         }
                     </tbody>
