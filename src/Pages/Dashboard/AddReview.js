@@ -13,7 +13,6 @@ const AddReview = () => {
             ratings: event.target.ratings.value,
         }
 
-        console.log(review)
         axios.post('http://localhost:5000/reviews', review)
             .then(response => {
                 const { data } = response;
