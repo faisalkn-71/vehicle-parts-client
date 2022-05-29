@@ -7,8 +7,6 @@ const ManageProduct = () => {
     const [products, setProducts] = useProduct([]);
 
     
-
-    
     return (
         <div>
         <h1 className='text-2xl font-bold'>Manage Products</h1>

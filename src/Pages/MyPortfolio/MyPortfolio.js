@@ -6,13 +6,13 @@ const MyPortfolio = () => {
     return (
         <div>
 
-            <div class="hero min-h-screen bg-base-200">
-                <div class="hero-content flex-col lg:flex-row">
-                    <img src={photo} class="max-w-sm rounded-lg shadow-2xl" />
+            <div className="hero min-h-screen bg-base-200">
+                <div className="hero-content flex-col lg:flex-row">
+                    <img src={photo} className="max-w-sm rounded-lg shadow-2xl" />
                     <div>
-                        <h1 class="text-4xl font-bold">Md Faisal Karim</h1>
-                        <p class="pt-6">Email: csust2021@gmail.com</p>
-                        <p class="py-2">CST, 2nd Semister at Changsha University of Science and Technology, China</p>
+                        <h1 className="text-4xl font-bold">Md Faisal Karim</h1>
+                        <p className="pt-6">Email: csust2021@gmail.com</p>
+                        <p className="py-2">CST, 2nd Semister at Changsha University of Science and Technology, China</p>
                         
                     </div>
                 </div>

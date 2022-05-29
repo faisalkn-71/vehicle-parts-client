@@ -5,12 +5,11 @@ import auth from '../../firebase.init';
 
 const MyProfile = () => {
     const [user] = useAuthState(auth);
-    console.log(user)
     const email = user?.email;
+    
     const [Profile, setProfile] = useState({});
-    console.log(Profile)
     useEffect(() => {
-        fetch(`http://localhost:5000/userProfile/${email}`)
+        fetch(`https://fathomless-plateau-95313.herokuapp.com/userProfile/${email}`)
         .then(res => res.json())
         .then(data => setProfile(data))
     }, [])
@@ -26,10 +25,9 @@ const MyProfile = () => {
             phone: event.target.phone.value,
         }
 
-        console.log(myProfile)
 
         if(email){
-            fetch(`http://localhost:5000/userProfile/${email}`, {
+            fetch(`https://fathomless-plateau-95313.herokuapp.com/userProfile/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
@@ -48,14 +46,14 @@ const MyProfile = () => {
     return (
         <div>
 
-        <div class="card lg:max-w-lg m-3 bg-base-100 shadow-xl">
-        <div class="card-body">
+        <div className="card lg:max-w-lg m-3 bg-base-100 shadow-xl">
+        <div className="card-body">
 
         <h1 className='text-2xl text-center font-bold mb-4'>My Profile</h1>
 
             <img width='100px' height='100px' className="rounded-lg" src={user?.photoURL || 'https://i.ibb.co/whxhPPg/cute-girl.jpg'}  alt="" />
 
-            <h2 class="card-title">Name: {user?.displayName}</h2>
+            <h2 className="card-title">Name: {user?.displayName}</h2>
             <p>Email: {user?.email}</p>
             <p>Education: {Profile.education}</p>
             <p>Address: {Profile.address}</p>

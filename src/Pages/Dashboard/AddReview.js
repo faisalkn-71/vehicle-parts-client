@@ -13,7 +13,7 @@ const AddReview = () => {
             ratings: event.target.ratings.value,
         }
 
-        axios.post('http://localhost:5000/reviews', review)
+        axios.post('https://fathomless-plateau-95313.herokuapp.com/reviews', review)
             .then(response => {
                 const { data } = response;
                 if (data.insertedId) {

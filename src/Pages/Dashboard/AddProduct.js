@@ -6,8 +6,8 @@ import { toast } from 'react-toastify';
 const AddProduct = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
-        console.log(data);
-        const url = 'http://localhost:5000/products';
+
+        const url = 'https://fathomless-plateau-95313.herokuapp.com/products';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -17,7 +17,6 @@ const AddProduct = () => {
         })
             .then(res => res.json())
             .then(result => {
-                console.log(result)
                 if(result.acknowledged){
                     toast.success("Product added successfully!!!")
                     window.location.reload();

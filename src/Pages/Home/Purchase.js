@@ -25,7 +25,7 @@ const Purchase = () => {
             quantity: event.target.quantity.value,
             phone: event.target.phone.value,
         }
-        axios.post('http://localhost:5000/order', order)
+        axios.post('https://fathomless-plateau-95313.herokuapp.com/order', order)
         .then(response => {
             const {data} = response;
             if(data.insertedId){
@@ -40,11 +40,11 @@ const Purchase = () => {
     return (
         <div>
             <div>
-            <div class="hero min-h-screen J">
-                <div class="hero-content flex-col lg:flex-row">
-                    <img src={product.picture} class="max-w-sm rounded-lg shadow-2xl" />
+            <div className="hero min-h-screen J">
+                <div className="hero-content flex-col lg:flex-row">
+                    <img src={product.picture} className="max-w-sm rounded-lg shadow-2xl" />
                     <div>
-                        <h1 class="text-3xl font-bold">{product.name}</h1>
+                        <h1 className="text-3xl font-bold">{product.name}</h1>
                         <p><small>{product.description}</small></p>
                         <p className='mt-5'>Available Order Quantity: {product.available_quantity}</p>
                         <p>Minimum Order Quantity: {product.minimum_order_quantity}</p>

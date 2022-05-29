@@ -5,7 +5,7 @@ const User = ({ user, index }) => {
     const { email, role } = user;
     // windows.location.reload
     const makeAdmin = () => {
-        fetch(`http://localhost:5000/user/admin/${email}`, {
+        fetch(`https://fathomless-plateau-95313.herokuapp.com/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

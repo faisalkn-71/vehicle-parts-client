@@ -10,7 +10,7 @@ const Users = () => {
 
     useEffect( () => {
 
-        fetch('http://localhost:5000/user', {
+        fetch('https://fathomless-plateau-95313.herokuapp.com/user', {
             method: 'GET', 
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -20,7 +20,7 @@ const Users = () => {
         .then(data => setUsers(data))
     }, [])
     
-    // const { data, isLoading, refetch } = useQuery('user', () => fetch('http://localhost:5000/user', {
+    // const { data, isLoading, refetch } = useQuery('user', () => fetch('https://fathomless-plateau-95313.herokuapp.com/user', {
     //             method: 'GET', 
     //             headers: {
     //                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import useProduct from '../../hook/useProduct';
-import ManageProduct from '../Dashboard/ManageProduct';
 import Product from './Product';
 
 const Products = () => {
