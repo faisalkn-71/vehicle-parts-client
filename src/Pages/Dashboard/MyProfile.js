@@ -71,8 +71,6 @@ const MyProfile = () => {
 
                     <h1 className='text-xl font-bold mb-4'>Update Profile</h1>
 
-
-
                     <input className='input input-bordered input-secondary w-full max-w-md mb-2' type="text" name='education' placeholder='Education' required />
                     <br />
 

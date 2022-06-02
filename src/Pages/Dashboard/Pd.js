@@ -22,6 +22,7 @@ const Pd = ({ product }) => {
                 }
                 const remaining = products.filter(product => product._id !== id);
                 setProducts(remaining);
+                
             })
 
         }

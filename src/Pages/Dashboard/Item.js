@@ -15,7 +15,6 @@ const Item = ({ item }) => {
             })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 const remaining = myProduct.filter(product => product._id !== id);
                 setMyProduct(remaining);
             })

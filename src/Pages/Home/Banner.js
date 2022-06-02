@@ -7,7 +7,7 @@ const Banner = () => {
             <div className="hero min-h-screen">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div>
-                        <img width='550px' height='500px' src="https://i.ibb.co/P6Zs6WT/banner.jpg" className="max-w-sm rounded-lg shadow-2xl" />
+                        <img src="https://i.ibb.co/P6Zs6WT/banner.jpg" className="max-w-sm rounded-lg shadow-2xl" />
                     </div>
                     <div>
                         <h1 className="text-5xl font-bold">Find Parts for Your Vehicle!</h1>

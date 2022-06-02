@@ -6,8 +6,7 @@ import User from './User';
 
 const Users = () => {
     const [users, setUsers] = useState([]);
-    console.log(users)
-
+    
     useEffect( () => {
 
         fetch('https://fathomless-plateau-95313.herokuapp.com/user', {

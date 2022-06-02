@@ -5,15 +5,15 @@ import Order from './Order';
 const ManageOrders = () => {
     const [orders, setOrders] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/order')
+        fetch('https://fathomless-plateau-95313.herokuapp.com/orders')
         .then(res => res.json())
         .then(data => setOrders(data))
     }, [])
     return (
         <div>
-            <h1>All Orders: {orders.length}</h1>
+            <h1 className='text-2xl font-bold'>All Orders: {orders.length}</h1>
 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
                 {
                     orders.map(order =>  <Order
                     key={order._id}
