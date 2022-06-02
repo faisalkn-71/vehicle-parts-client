@@ -20,6 +20,7 @@ import Users from './Pages/Dashboard/Users';
 import AddProduct from './Pages/Dashboard/AddProduct';
 import ManageProduct from './Pages/Dashboard/ManageProduct';
 import RequireAdmin from './Pages/Login/RequireAdmin';
+import ManageOrders from './Pages/Dashboard/ManageOrders';
 
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
           }></Route>
           <Route path='addProduct' element={<AddProduct></AddProduct>}></Route>
           <Route path='manageProduct' element={<ManageProduct></ManageProduct>}></Route>
+          <Route path='manageOrders' element={<ManageOrders></ManageOrders>}></Route>
         </Route>
         <Route path='myPortfolio' element={<MyPortfolio></MyPortfolio>}></Route>
         <Route path='blogs' element={<Blogs></Blogs>}></Route>
